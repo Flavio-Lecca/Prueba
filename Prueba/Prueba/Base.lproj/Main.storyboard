@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="-486.95652173913049" y="71.651785714285708"/>
         </scene>
-        <!--Inicio Login View Controller-->
+        <!--LOGIN-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="InicioLoginViewController" customModule="Prueba" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,7 +171,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EnP-LQ-LJn" secondAttribute="trailing" constant="57" id="whC-uz-Qei"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QSg-yn-UKx"/>
+                    <navigationItem key="navigationItem" title="LOGIN" id="QSg-yn-UKx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,16 +15,84 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-principal" translatesAutoresizingMaskIntoConstraints="NO" id="n9k-Jh-AEH">
+                                <rect key="frame" x="120" y="155" width="174" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="OFr-aP-H3V"/>
+                                    <constraint firstAttribute="width" constant="174" id="YBr-4N-v2Y"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CORREO" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntW-J5-LGB">
+                                <rect key="frame" x="57" y="399" width="300" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ow6-d6-yec"/>
+                                    <constraint firstAttribute="height" constant="34" id="qbs-Yp-OwT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CONTRASEÑA" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agB-Vx-9aD">
+                                <rect key="frame" x="57" y="466" width="300" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UuL-qn-4qy"/>
+                                    <constraint firstAttribute="width" constant="300" id="eiV-hP-AFD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-P1-1wK">
+                                <rect key="frame" x="57" y="556" width="300" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="f2D-Wi-Mwe"/>
+                                    <constraint firstAttribute="width" constant="300" id="o6C-pz-09Z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear Cuenta">
+                                    <color key="baseBackgroundColor" red="0.090196078431372548" green="0.074509803921568626" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAA-jD-b6W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.29030057998133757" green="0.22829466293484718" blue="0.99743169549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n9k-Jh-AEH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="1hN-Ky-wBg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ff6-P1-1wK" secondAttribute="trailing" constant="57" id="1xs-FH-UsS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="agB-Vx-9aD" secondAttribute="trailing" constant="57" id="6DQ-oy-W13"/>
+                            <constraint firstAttribute="trailing" secondItem="DAA-jD-b6W" secondAttribute="trailing" id="7RP-ir-hAb"/>
+                            <constraint firstItem="DAA-jD-b6W" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="8uj-aC-0PA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ff6-P1-1wK" secondAttribute="bottom" constant="257" id="DKL-nJ-qk5"/>
+                            <constraint firstItem="ntW-J5-LGB" firstAttribute="top" secondItem="n9k-Jh-AEH" secondAttribute="bottom" constant="76" id="H0d-Vq-5gC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n9k-Jh-AEH" secondAttribute="trailing" constant="120" id="HUk-kY-C2f"/>
+                            <constraint firstItem="agB-Vx-9aD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="57" id="JfN-Ce-GOf"/>
+                            <constraint firstAttribute="bottom" secondItem="DAA-jD-b6W" secondAttribute="bottom" id="OWl-DM-3eK"/>
+                            <constraint firstItem="agB-Vx-9aD" firstAttribute="top" secondItem="ntW-J5-LGB" secondAttribute="bottom" constant="33" id="ajG-R8-aFs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="n9k-Jh-AEH" secondAttribute="bottom" constant="539" id="eff-XF-VN0"/>
+                            <constraint firstItem="n9k-Jh-AEH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="111" id="fGi-HA-bUd"/>
+                            <constraint firstItem="DAA-jD-b6W" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gkE-v8-kjw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ntW-J5-LGB" secondAttribute="trailing" constant="57" id="jE6-dk-Hwa"/>
+                            <constraint firstItem="ntW-J5-LGB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="57" id="okU-CH-2d0"/>
+                            <constraint firstItem="ff6-P1-1wK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="57" id="sJY-ya-MOA"/>
+                            <constraint firstItem="ff6-P1-1wK" firstAttribute="top" secondItem="agB-Vx-9aD" secondAttribute="bottom" constant="56" id="tF6-Xr-tVJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo-principal" width="90.5" height="84"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
