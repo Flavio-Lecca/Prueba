@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDD6B9D2834D566008BFFAC /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD6B9C2834D566008BFFAC /* InicioViewController.swift */; };
+		0D8716162835EC3F00ACE863 /* InicioLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8716152835EC3F00ACE863 /* InicioLoginViewController.swift */; };
+		0D8716182835EC8300ACE863 /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8716172835EC8300ACE863 /* RegistrarViewController.swift */; };
+		0D87161A2835ECB500ACE863 /* RecuperarPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8716192835ECB400ACE863 /* RecuperarPassViewController.swift */; };
+		0D87161C2835ED0E00ACE863 /* Registrar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D87161B2835ED0E00ACE863 /* Registrar.storyboard */; };
+		0D87161E2835ED2000ACE863 /* RecuperarPass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D87161D2835ED2000ACE863 /* RecuperarPass.storyboard */; };
 		7265BAE9283068040059416D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265BAE8283068040059416D /* AppDelegate.swift */; };
 		7265BAEB283068040059416D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265BAEA283068040059416D /* SceneDelegate.swift */; };
 		7265BAED283068040059416D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265BAEC283068040059416D /* ViewController.swift */; };
@@ -17,7 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DDD6B9C2834D566008BFFAC /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		0D8716152835EC3F00ACE863 /* InicioLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioLoginViewController.swift; sourceTree = "<group>"; };
+		0D8716172835EC8300ACE863 /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
+		0D8716192835ECB400ACE863 /* RecuperarPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPassViewController.swift; sourceTree = "<group>"; };
+		0D87161B2835ED0E00ACE863 /* Registrar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registrar.storyboard; sourceTree = "<group>"; };
+		0D87161D2835ED2000ACE863 /* RecuperarPass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecuperarPass.storyboard; sourceTree = "<group>"; };
 		7265BAE5283068040059416D /* Prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265BAE8283068040059416D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7265BAEA283068040059416D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +73,11 @@
 				7265BAF1283068080059416D /* Assets.xcassets */,
 				7265BAF3283068080059416D /* LaunchScreen.storyboard */,
 				7265BAF6283068080059416D /* Info.plist */,
-				0DDD6B9C2834D566008BFFAC /* InicioViewController.swift */,
+				0D8716152835EC3F00ACE863 /* InicioLoginViewController.swift */,
+				0D8716172835EC8300ACE863 /* RegistrarViewController.swift */,
+				0D8716192835ECB400ACE863 /* RecuperarPassViewController.swift */,
+				0D87161B2835ED0E00ACE863 /* Registrar.storyboard */,
+				0D87161D2835ED2000ACE863 /* RecuperarPass.storyboard */,
 			);
 			path = Prueba;
 			sourceTree = "<group>";
@@ -130,7 +142,9 @@
 			files = (
 				7265BAF5283068080059416D /* LaunchScreen.storyboard in Resources */,
 				7265BAF2283068080059416D /* Assets.xcassets in Resources */,
+				0D87161C2835ED0E00ACE863 /* Registrar.storyboard in Resources */,
 				7265BAF0283068040059416D /* Main.storyboard in Resources */,
+				0D87161E2835ED2000ACE863 /* RecuperarPass.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7265BAED283068040059416D /* ViewController.swift in Sources */,
+				0D87161A2835ECB500ACE863 /* RecuperarPassViewController.swift in Sources */,
+				0D8716182835EC8300ACE863 /* RegistrarViewController.swift in Sources */,
+				0D8716162835EC3F00ACE863 /* InicioLoginViewController.swift in Sources */,
 				7265BAE9283068040059416D /* AppDelegate.swift in Sources */,
 				7265BAEB283068040059416D /* SceneDelegate.swift in Sources */,
-				0DDD6B9D2834D566008BFFAC /* InicioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
