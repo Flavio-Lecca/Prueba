@@ -8,4 +8,12 @@
 import UIKit
 class InicioLoginViewController: UIViewController {
     
+    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+
 }
