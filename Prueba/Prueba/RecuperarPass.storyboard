@@ -15,16 +15,86 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq8-AL-UUS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.28871113059999998" green="0.34714505080000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-Nb-P5k">
+                                <rect key="frame" x="120" y="155" width="174" height="168"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECUPERA TU CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEA-vO-tAX">
+                                <rect key="frame" x="57" y="360" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ibg-DY-Zyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRESA TU CORREO ELECTRONICO PARA ENVIARTE TU NUEVA CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-W5-cEG">
+                                <rect key="frame" x="34" y="380" width="350" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CORREO" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XE4-dy-9DB">
+                                <rect key="frame" x="57" y="470" width="300" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="OYY-3V-CqL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0De-nw-ds7">
+                                <rect key="frame" x="57" y="540" width="300" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="sgW-d8-mAl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RECUPERAR CONTRASEÑA">
+                                    <color key="baseBackgroundColor" red="0.079262040559999997" green="0.07620159537" blue="0.25133714080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xq8-AL-UUS" firstAttribute="centerX" secondItem="XE4-dy-9DB" secondAttribute="centerX" id="2ny-s4-iUN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0De-nw-ds7" secondAttribute="bottom" constant="273" id="925-d5-vh9"/>
+                            <constraint firstItem="Jst-Nb-P5k" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="110.5" id="FK4-6l-hOQ"/>
+                            <constraint firstItem="xq8-AL-UUS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="-44" id="Onp-vv-93x"/>
+                            <constraint firstItem="XE4-dy-9DB" firstAttribute="top" secondItem="DEA-vO-tAX" secondAttribute="bottom" constant="76" id="OqV-ps-8Mf"/>
+                            <constraint firstItem="DEA-vO-tAX" firstAttribute="leading" secondItem="XE4-dy-9DB" secondAttribute="leading" id="Os4-zK-fbX"/>
+                            <constraint firstItem="xq8-AL-UUS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Q1L-Tb-yFX"/>
+                            <constraint firstItem="xq8-AL-UUS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QBP-cU-Wj1"/>
+                            <constraint firstItem="XE4-dy-9DB" firstAttribute="leading" secondItem="0De-nw-ds7" secondAttribute="leading" id="SrL-6h-JtU"/>
+                            <constraint firstItem="mdq-W5-cEG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="Urc-ce-8Bn"/>
+                            <constraint firstItem="0De-nw-ds7" firstAttribute="top" secondItem="XE4-dy-9DB" secondAttribute="bottom" constant="36" id="esc-q7-B5e"/>
+                            <constraint firstItem="Jst-Nb-P5k" firstAttribute="centerX" secondItem="DEA-vO-tAX" secondAttribute="centerX" id="f1Q-qw-oOz"/>
+                            <constraint firstItem="DEA-vO-tAX" firstAttribute="trailing" secondItem="XE4-dy-9DB" secondAttribute="trailing" id="fyJ-eV-8HP"/>
+                            <constraint firstItem="mdq-W5-cEG" firstAttribute="top" secondItem="Jst-Nb-P5k" secondAttribute="bottom" constant="56" id="gJL-Qm-TJI"/>
+                            <constraint firstItem="xq8-AL-UUS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pxt-Qo-D1u"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mdq-W5-cEG" secondAttribute="trailing" constant="30" id="rZB-Kx-8rj"/>
+                            <constraint firstItem="DEA-vO-tAX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="57" id="ssd-1F-aEq"/>
+                            <constraint firstItem="XE4-dy-9DB" firstAttribute="trailing" secondItem="0De-nw-ds7" secondAttribute="trailing" id="uXW-kb-dbz"/>
+                            <constraint firstItem="Jst-Nb-P5k" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="vXu-Ha-Bd3"/>
+                            <constraint firstItem="XE4-dy-9DB" firstAttribute="top" secondItem="mdq-W5-cEG" secondAttribute="bottom" constant="24" id="w9P-GE-S4f"/>
+                            <constraint firstItem="DEA-vO-tAX" firstAttribute="top" secondItem="Jst-Nb-P5k" secondAttribute="bottom" constant="36" id="z98-8K-Lxz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
